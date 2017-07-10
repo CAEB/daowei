@@ -1,0 +1,82 @@
+.login{
+    width:330px;
+    height:400px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 13%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px #ccc solid;
+    text-align: center;
+}
+.login h2{
+    background: url(../img/houtai-logo.png) center no-repeat;
+    height: 70px;
+    line-height: 70px;
+    background-size: 290px;
+    margin-top: 0;
+}
+.checkbox {
+    position: relative;
+    left:37px;
+    text-align: left;
+    margin:10px 0;
+}
+.checkbox span{
+    color: #337ab7;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.checkbox input{
+    vertical-align: bottom;
+}
+.user input,.password input,.identifying input,.checking input{
+    width: 262px;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 10px;
+}
+input::-webkit-input-placeholder{
+    font-size: 14px;
+    line-height: 50px;
+    color:#999999;
+}
+.user,.identifying,.checking,.password{
+    margin-top:10px;
+}
+#register{
+    color: #fff;
+    width:263px;
+    height:46px;
+    background-color: #286090;
+    border-color: #204d74;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    position: relative;
+}
+.checking{
+    position: relative;
+}
+#checking {
+    position: absolute;
+    left:216px;
+}
+#checking img{
+    width:80px;
+    height:41px;
+    border-radius:0 5px 5px 0;
+}
+.bottom {
+    margin-top: 20px;
+    width:224px;
+    position: relative;
+    left:52px;
+}
+.bottom a{
+    color: #337AB7;
+    font-size: 14px;
+}

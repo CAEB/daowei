@@ -1,0 +1,68 @@
+.login{
+    width:330px;
+    height:325px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 13%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px #ccc solid;
+    text-align: center;
+}
+.login h2{
+    background: url(../img/houtai-logo.png) center no-repeat;
+    height: 70px;
+    line-height: 70px;
+    background-size: 290px;
+    margin-top: 0;
+}
+input{
+    width: 262px;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+input::-webkit-input-placeholder{
+    font-size: 14px;
+    line-height: 50px;
+    color:#999999;
+}
+.user {
+    margin-top:10px;
+}
+.password {
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+.user input,.password input{
+    text-indent: 10px;
+}
+#login{
+    color: #fff;
+    width:263px;
+    height:46px;
+    background-color: #286090;
+    border-color: #204d74;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    position: relative;
+}
+.bottom {
+    margin-top: 20px;
+    width:224px;
+    position: relative;
+    left:52px;
+}
+.bottom a{
+    color: #337AB7;
+    font-size: 14px;
+}
+.reset-password{
+    float: left;
+}
+.register{
+    float:right;
+}

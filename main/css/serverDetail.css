@@ -1,0 +1,249 @@
+html,body {
+    font: 14px/1.14 "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+/*todo 头部*/
+header{
+    width:1366px;
+    height:70px;
+    line-height: 70px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header-wrap {
+    overflow: hidden;
+}
+.header-wrap img{
+    padding: 10px 5% 20px 5%;
+    float: left;
+}
+.nav {
+    margin-left: 50%;
+}
+.nav li {
+    float:left;
+    margin-right: 40px;
+}
+.nav li .active{
+    color:red;
+}
+.nav li a{
+    font-size: 16px;
+    color: #121212;
+    font-weight: bold;
+}
+.nav #login a{
+    background: #E94840;
+    color: #ffffff;
+    padding:4px;
+    border-radius: 5px;
+}
+/*服务项详情*/
+.server-detail{
+    width:100%;
+    background: #FBF8F8;
+    padding:0 5% 40px 5%;
+    box-sizing: border-box;
+}
+.detail-avatar {
+    width:160px;
+    height:160px;
+    vertical-align: top;
+}
+.server-detail h1  span {
+    font-size: 18px;
+    font-weight: bold;
+    height: 85px;
+    line-height: 85px;
+}
+.server-detail-body{
+   width:960px;
+}
+.server-detail-body-header{
+    width:960px;
+    height: 220px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+.server-detail-body-header div{
+    display: inline-block;
+}
+.two-code{
+    display: inline-block;
+    width:115px;
+    height:115px;
+    background: url('../img/twoCode1.png');
+    vertical-align: top;
+}
+.detail-left{
+    display:inline-block;
+    margin-left: 20px;
+    margin-top: -20px;
+    line-height: 50px;
+}
+.detail-left span:nth-child(1){
+    font-size: 18px;
+    color: #1d1515;
+}
+.detail-left span:nth-child(2) em {
+    font-size: 20px;
+    color: #fc545e;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.detail-left span:nth-child(3) em{
+    color: #fc545e;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.detail-left span:nth-child(2) em i{
+    font-size: 14px;
+}
+
+.detail-right{
+    display: inline-block;
+    margin-left: 470px;
+    text-align: center;
+}
+.detail-right span:nth-child(2){
+    position: relative;
+    top:10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.detail-right span:nth-child(3){
+    position: relative;
+    top:20px;
+    color: #fb474f;
+    font-size: 16px;
+    font-weight: bold;
+}
+.detail-left span,.detail-right span{
+    display: block;
+}
+/*详细介绍*/
+.server-detail{
+    position: relative;
+}
+.server-detail-body-main{
+    width:960px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.server-detail-body-main h2 {
+    color:#121212;
+    padding-bottom:15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.server-detail-body-main h2 span{
+    border-bottom: 4px solid #fb474f;
+    font-size: 16px;
+}
+.server-detail-body-main p{
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.server-detail-body-main p i{
+    color: #fb474f;
+}
+.server-logo {
+    width: 230px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    text-align: center;
+}
+.server-logo .name{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.server-logo-image{
+    width: 80px;
+    height:80px;
+    text-align: center;
+    margin: 40px 50px;
+    margin-bottom: 10px
+}
+.server-logo h3 {
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    text-align: left;
+}
+.server-logo .bottom-list {
+    text-align: left;
+    padding: 0 10px;
+    line-height: 36px;
+    margin-bottom: 0;
+    font-size: 16px
+}
+.server-logo .bottom-list i {
+    float: right;
+    color: #fb474f;
+}
+.bottom-image {
+   margin-top: 10px;
+}
+.logo-container{
+    position: absolute;
+    top:85px;
+    right:90px;
+}
+/*底部*/
+.ensure {
+    text-align: center;
+}
+.ensure h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 30px;
+}
+.ensure h2 span{
+    color:#FB474F;
+    font-weight: 600;
+}
+.ensure p {
+    font-size: 20px;
+    color: #3d3838;
+    margin: 0;
+}
+.watch-word{
+    width: 100%;
+    padding-top: 68px;
+    background: #fff;
+    height: 150px;
+}
+.watch-word ul {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.watch-word ul li {
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: #1d1515;
+    font-size: 18px;
+}
+.watch-word ul li img {
+    vertical-align: middle;
+}
+.copy-right {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+.copy-right p {
+    color: #898989;
+    margin-bottom: 20px;
+}

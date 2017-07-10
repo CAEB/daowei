@@ -1,0 +1,263 @@
+html,body {
+    font: 14px/1.14 "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+/*todo 头部*/
+header{
+    width:1366px;
+    height:70px;
+    line-height: 70px;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 500;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+    animation:header-move 1s ;
+}
+.header-wrap {
+    overflow: hidden;
+}
+.header-wrap img{
+    padding: 10px 5% 20px 5%;
+    float: left;
+}
+.nav {
+    margin-left: 50%;
+}
+.nav li {
+    float:left;
+    margin-right: 40px;
+}
+.nav li .active{
+    color:red;
+}
+.nav li a{
+    font-size: 16px;
+    color: #121212;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+.nav #login a{
+    background: #E94840;
+    color: #ffffff;
+    padding:4px;
+    border-radius: 5px;
+}
+@keyframes header-move {
+    from{height:0;opacity:0}
+    to{height:70px;opacity:0.9;}
+}
+/*todo 轮播及菜单*/
+.menu{
+    margin-top: 70px;
+}
+.menu img {
+    position: relative;
+    left:-277px;
+}
+.menus {
+    width:180px;
+    height:420px;
+    background: #757881;
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 100px;
+}
+.menus ul li{
+    text-align: center;
+    padding:12px 0;
+}
+.menus>ul>li>a {
+    font-size: 16px;
+    font-weight: bold;
+    color:#fff;
+}
+.toright{
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background: url('../img/right.png');
+    position: relative;
+    left:8px;
+}
+.toleft {
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background: url('../img/icon1.png');
+    position: relative;
+    left:53px;
+}
+.child-menu {
+    width:180px;
+    height:420px;
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 180px;
+    display: none;
+}
+.child-menu li>a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #121212;
+}
+/*服务列表*/
+.list .list-body:nth-child(even){
+    background: #FBF8F8;
+}
+.list-body {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.list-body-header {
+    text-align: center;
+}
+.list-body-header h1{
+    color: #3d3838;
+    font-weight: 800;
+    font-size: 28px;
+}
+.list-body-header span{
+    display: inline-block;
+    font-family: "幼圆";
+    font-size: 22px;
+    color: #3d3838;
+    margin-top: 15px;
+}
+.detail-more{
+   text-align: right;
+}
+.list-detail{
+    margin: 10px 5%;
+}
+.list-detail ul{
+    overflow: hidden;
+}
+.list-detail ul li {
+    float: left;
+    padding: 10px;
+    width: 230px;
+    border: 1px solid #eaeaea;
+    margin: 0 5px;
+    background: #fff;
+    cursor: pointer;
+    height: 345px;
+    box-sizing: border-box;
+}
+.shadow{
+    box-shadow: 5px 5px 15px #ccc;
+}
+.list-detail ul li img {
+    width:210px;
+    height:210px;
+}
+.detail-more a{
+    color: #898989;
+    font-size: 18px;
+    position: relative;
+    right:35px;
+    top:-8px;
+}
+.detail-name {
+    font-size: 16px;
+    padding: 5px 0;
+    font-weight: 800;
+    color: #000;
+    height: 28px;
+    overflow: hidden;
+    width: 101%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.detail-description {
+    color: #929292;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 13px;
+    height: 58px;
+}
+.detail-price {
+    color:#fb474f;
+    font-weight: 600;
+    margin-top: -15px;
+}
+.detail-price span:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+    color: #fb474f;
+}
+.detail-price span:nth-child(2){
+    float: right;
+    padding: 0;
+    width: 76px;
+    height: 24px;
+    line-height: 22px;
+    text-align: center;
+    background: #fb474f;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
+
+/*底部*/
+.ensure {
+    text-align: center;
+}
+.ensure h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 30px;
+}
+.ensure h2 span{
+    color:#FB474F;
+    font-weight: 600;
+}
+.ensure p {
+    font-size: 20px;
+    color: #3d3838;
+    margin: 0;
+}
+.watch-word{
+    width: 100%;
+    padding-top: 68px;
+    background: #fff;
+    height: 150px;
+}
+.watch-word ul {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.watch-word ul li {
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: #1d1515;
+    font-size: 18px;
+}
+.watch-word ul li img {
+    vertical-align: middle;
+}
+.copy-right {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+.copy-right p {
+    color: #898989;
+    margin-bottom: 20px;
+}

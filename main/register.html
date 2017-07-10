@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <script type="text/javascript" src="./js/checking.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="login">
+        <h2></h2>
+        <form action="">
+            <div class="user">
+                <input type="text" name="userName" placeholder="请输入呢称或手机号">
+            </div>
+            <div class="checking">
+                <div id="checking"></div>
+                <input type="text" placeholder="请输入图片中的字符">
+            </div>
+            <div class="identifying">
+                <input type="text" placeholder="请输入验证码">
+            </div>
+            <div class="password">
+                <input type="password" name="password" placeholder="请输入密码">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"><span>您确认并同意到位用户协议</span>
+            </div>
+            <input id="register" type="submit" value="注册">
+        </form>
+        <div class="bottom">
+            <a href="javascript:;">已有账户？登录</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var checkingvalue = createCheck('checking');
+    var checking = document.getElementById('checking');
+    checking.onclick = function () {
+        checkingvalue = createCheck('checking');
+//        console.log(checkingvalue)
+    }
+
+</script>
+</html>
