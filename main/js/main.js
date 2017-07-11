@@ -1,5 +1,6 @@
-$(function ($) {
-    let $header=$('.nav li a');
+
+$(function () {
+    let $header=$('.nav li a').not('#login a');
     $header.on('mouseover',function () {
         $(this).css('color','red');
     });
@@ -31,11 +32,17 @@ $(function ($) {
     $shadow.on('mouseout',function () {
         $(this).removeClass('shadow');
     });
-    $(window).scroll(function () {
-        if($(document).scrollTop()>80){
-            $('header').addClass('fixed');
-        }else{
-            $('header').removeClass('fixed');
-        }
+    $(function () {
+        $(window).scroll(function () {
+            if($(document).scrollTop()>80){
+                $('header').addClass('fixed');
+                console.log(123);
+                $('.menu').css('margin-Top','70px')
+            }else{
+                $('header').removeClass('fixed');
+                $('.menu').css('margin-Top','0')
+            }
+        })
     })
+
 });

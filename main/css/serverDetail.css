@@ -8,6 +8,19 @@ header{
     line-height: 70px;
     border-bottom: 1px solid #e5e5e5;
 }
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 500;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+    animation:header-move 1s ;
+}
+@keyframes header-move {
+    from{height:0;opacity:0}
+    to{height:70px;opacity:0.9;}
+}
 .header-wrap {
     overflow: hidden;
 }
@@ -102,7 +115,7 @@ header{
 
 .detail-right{
     display: inline-block;
-    margin-left: 470px;
+    margin-left: 400px;
     text-align: center;
 }
 .detail-right span:nth-child(2){

@@ -11,7 +11,7 @@
 <div class="wrapper">
     <div class="login">
         <h2></h2>
-        <form action="">
+        <form action="http://localhost:3000/user" method="post">
             <div class="user">
                 <input type="text" name="userName" placeholder="请输入呢称或手机号">
             </div>
@@ -31,7 +31,7 @@
             <input id="register" type="submit" value="注册">
         </form>
         <div class="bottom">
-            <a href="javascript:;">已有账户？登录</a>
+            <a href="./login.html">已有账户？登录</a>
         </div>
     </div>
 </div>
@@ -41,7 +41,6 @@
     var checking = document.getElementById('checking');
     checking.onclick = function () {
         checkingvalue = createCheck('checking');
-//        console.log(checkingvalue)
     }
 
 </script>

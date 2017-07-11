@@ -7,7 +7,6 @@ header{
     height:70px;
     line-height: 70px;
     border-bottom: 1px solid #e5e5e5;
-
 }
 .fixed{
     position: fixed;
@@ -53,7 +52,7 @@ header{
 }
 /*todo 轮播及菜单*/
 .menu{
-    margin-top: 70px;
+    /*margin-top: 70px;*/
 }
 .menu img {
     position: relative;
@@ -113,8 +112,8 @@ header{
     background: #FBF8F8;
 }
 .list-body {
-    margin-top: 40px;
-    padding-top: 50px;
+    margin-top: 20px;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 .list-body-header {
@@ -212,6 +211,9 @@ header{
 
 
 /*底部*/
+footer {
+    margin-top: 50px;
+}
 .ensure {
     text-align: center;
 }

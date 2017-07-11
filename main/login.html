@@ -5,25 +5,56 @@
     <title></title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./js/jquery-1.10.1.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="login">
             <h2></h2>
-            <form action="">
+            <form action=''>
                 <div class="user">
-                    <input type="text" name="userName" placeholder="请输入呢称或手机号">
+                    <input type="text" id="userName" name="userName" placeholder="请输入呢称或手机号">
                 </div>
                 <div class="password">
-                    <input type="password" name="password" placeholder="请输入密码">
+                    <input type="text" id="passWord" name="password" placeholder="请输入密码">
                 </div>
-                <input id="login" type="submit" value="登录">
+                <input id="login" type="button" value="登录">
             </form>
             <div class="bottom">
-                <a  class='reset-password' href="javascript:;">忘记密码</a>
-                <a  class="register" href="javascript:;">注册</a>
+                <a  class='reset-password' href="./register.html">忘记密码</a>
+                <a  class="register" href="./register.html">注册</a>
             </div>
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    let data={};
+    $.ajax({
+        type:'get',
+        url:'http://localhost:3000/user',
+        async:false,
+        success:function (msg) {
+          data=msg;
+        }
+    });
+        let count=0;
+        $('#login').on('click',function () {
+            let userName=$('#userName').val();
+            let passWord=+$('#passWord').val();
+            console.log(userName,passWord);
+            data.forEach(function(item,index){
+                console.log(item.username,item.password);
+                if(item.username==userName && item.password==passWord ){
+                    count++;
+                }
+            });
+            console.log(count);
+            if(count===0){
+                alert('用户名或密码错误！！！')
+            }else{
+                window.location.href='./main.html';
+            }
+        });
+
+</script>
 </html>
