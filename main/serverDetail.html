@@ -112,11 +112,13 @@
     $.ajax({
         type: "get",
         async:false,
-        url:'http://localhost:3000/serverices?detailId='+$detailId,
+        url:'http://localhost:5000/test/detail/'+$detailId,
         success: function(msg){
-          data.list=msg;
+            console.log(msg);
+          data.list=msg.data;
         }
     });
+    console.log(data);
     var html = template('test', data);
     $('#content').html(html);
 </script>

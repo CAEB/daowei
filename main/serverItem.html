@@ -148,17 +148,18 @@
 </body>
 <script type="text/javascript">
         $(function () {
-            $('.server-item-list').on('mouseover',function () {
+            let $list= $('.server-item-list');
+            $list.on('mouseover',function () {
                 $(this).css('background','#F8F8F8');
             });
-            $('.server-item-list').on('mouseout',function () {
+            $list.on('mouseout',function () {
                 $(this).css('background','#ffffff')
             });
             $('.server-item-body-nav ul li ').on('click',function () {
                 $(this).addClass('active-bg');
                 $(this).siblings('li').removeClass('active-bg');
             });
-            $('.server-item-list').on('click',function () {
+            $list.on('click',function () {
                 let $detailId=$(this).children('em').html();
                 localStorage.setItem('detailId',$detailId);
                 window.location.href='./serverDetail.html';
@@ -169,12 +170,11 @@
         $.ajax({
             type: "get",
             async:false,
-            url: "http://localhost:3000/servericeShops?shop="+$shop,
+            url: "http://localhost:5000/test/servers/"+$shop,
             success: function(msg){
-                data.list=msg;
+                data.list=msg.data;
             }
         });
-        console.log(data);
         let html = template('test', data);
         $('#content').html(html);
 </script>

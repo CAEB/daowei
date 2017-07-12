@@ -82,9 +82,9 @@
     $.ajax({
         type: "get",
         async:false,
-        url: "http://localhost:3000/servericeShops",
+        url: "http://localhost:5000/test/servers",
         success: function(msg){
-            data.list=msg;
+            data.list=msg.data;
         }
     });
     console.log(data);

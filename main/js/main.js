@@ -36,7 +36,6 @@ $(function () {
         $(window).scroll(function () {
             if($(document).scrollTop()>80){
                 $('header').addClass('fixed');
-                console.log(123);
                 $('.menu').css('margin-Top','70px')
             }else{
                 $('header').removeClass('fixed');

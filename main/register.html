@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/register.css">
     <script type="text/javascript" src="./js/checking.js"></script>
+    <script type="text/javascript" src="./js/jquery-1.10.1.js"></script>
 </head>
 <body>
 <div class="wrapper">
     <div class="login">
         <h2></h2>
-        <form action="http://localhost:3000/user" method="post">
+        <form method="get" >
             <div class="user">
-                <input type="text" name="userName" placeholder="请输入呢称或手机号">
+                <input type="text" id="username" name="userName" placeholder="请输入呢称或手机号">
             </div>
             <div class="checking">
                 <div id="checking"></div>
@@ -23,12 +24,12 @@
                 <input type="text" placeholder="请输入验证码">
             </div>
             <div class="password">
-                <input type="password" name="password" placeholder="请输入密码">
+                <input type="password" id="password" name="password" placeholder="请输入密码">
             </div>
             <div class="checkbox">
                 <input type="checkbox"><span>您确认并同意到位用户协议</span>
             </div>
-            <input id="register" type="submit" value="注册">
+            <input id="register" type="button" value="注册">
         </form>
         <div class="bottom">
             <a href="./login.html">已有账户？登录</a>
@@ -41,7 +42,30 @@
     var checking = document.getElementById('checking');
     checking.onclick = function () {
         checkingvalue = createCheck('checking');
-    }
+    };
 
+    $('#register').on('click',function () {
+        let username=$('#username').val();
+        let password=$('#password').val();
+        let data={
+            username:username,
+            password:password
+        };
+        if(username=='' && password==""){
+            alert('用户名和密码不能为空');
+            return;
+        }
+        $.ajax({
+            url:'http://localhost:5000/register',
+            type:'get',
+            data:data,
+            success:function (msg) {
+                alert(msg);
+                window.location.href='./login.html'
+            }
+        });
+        $('#username').val('');
+        $('#password').val('');
+    })
 </script>
 </html>

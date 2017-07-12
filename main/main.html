@@ -40,44 +40,48 @@
             <div class="menus">
                 <ul >
                     <li>
-                        <a href="javascript:;">家庭保洁</a>
+                        <a href="./serverSort.html">家庭保洁</a>
+                        <span style="display: none">0</span>
                         <span class="toright"> </span>
                         <ul class="child-menu">
-                            <li><a href="javascript:;">小时工</a></li>
-                            <li><a href="javascript:;">开荒保洁</a></li>
-                            <li><a href="javascript:;">擦玻璃</a></li>
-                            <li><a href="javascript:;">深度保洁</a></li>
-                            <li><a href="javascript:;">家居养护</a></li>
-                            <li><a href="javascript:;">杀虫灭鼠</a></li>
+                            <li><a href="./serverSort.html">小时工</a></li>
+                            <li><a href="./serverSort.html">开荒保洁</a></li>
+                            <li><a href="./serverSort.html">擦玻璃</a></li>
+                            <li><a href="./serverSort.html">深度保洁</a></li>
+                            <li><a href="./serverSort.html">家居养护</a></li>
+                            <li><a href="./serverSort.html">杀虫灭鼠</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;">上门按摩</a>
+                        <a href="./serverSort.html">上门按摩</a>
+                        <span style="display: none">1</span>
                         <span class="toright"> </span>
                         <ul class="child-menu">
-                            <li><a href="javascript:;">中医推拿</a></li>
-                            <li><a href="javascript:;">油压SPA</a></li>
-                            <li><a href="javascript:;">局部理疗</a></li>
-                            <li><a href="javascript:;">足疗套餐</a></li>
-                            <li><a href="javascript:;">母婴保健</a></li>
+                            <li><a href="./serverSort.html">中医推拿</a></li>
+                            <li><a href="./serverSort.html">油压SPA</a></li>
+                            <li><a href="./serverSort.html">局部理疗</a></li>
+                            <li><a href="./serverSort.html">足疗套餐</a></li>
+                            <li><a href="./serverSort.html">母婴保健</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:;">上门维修</a>
+                        <a href="./serverSort.html">上门维修</a>
+                        <span style="display: none">2</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
-                            <li><a href="javascript:;">手机维修</a></li>
-                            <li><a href="javascript:;">家电维修</a></li>
-                            <li><a href="javascript:;">电脑维修</a></li>
-                            <li><a href="javascript:;">家庭维修</a></li>
-                            <li><a href="javascript:;">管道疏通</a></li>
-                            <li><a href="javascript:;">开锁换锁</a></li>
-                            <li><a href="javascript:;">安装打孔</a></li>
-                            <li><a href="javascript:;">空气净化</a></li>
+                            <li><a href="./serverSort.html">手机维修</a></li>
+                            <li><a href="./serverSort.html">家电维修</a></li>
+                            <li><a href="./serverSort.html">电脑维修</a></li>
+                            <li><a href="./serverSort.html">家庭维修</a></li>
+                            <li><a href="./serverSort.html">管道疏通</a></li>
+                            <li><a href="./serverSort.html">开锁换锁</a></li>
+                            <li><a href="./serverSort.html">安装打孔</a></li>
+                            <li><a href="./serverSort.html">空气净化</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;">家电清洗</a>
+                        <span style="display: none">3</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">空调清洗</a></li>
@@ -92,6 +96,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">衣物洗护</a>
+                        <span style="display: none">4</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">洗衣</a></li>
@@ -102,6 +107,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">搬家速运</a>
+                        <span style="display: none">5</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">搬家租车</a></li>
@@ -111,6 +117,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">美容美妆</a>
+                        <span style="display: none">6</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">化妆</a></li>
@@ -123,6 +130,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">鲜花野植</a>
+                        <span style="display: none">7</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">包月鲜花</a></li>
@@ -132,6 +140,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">上门医护</a>
+                        <span style="display: none">8</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">护士上门</a></li>
@@ -142,6 +151,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">养车用车</a>
+                        <span style="display: none">9</span>
                         <span class="toright">  </span>
                         <ul class="child-menu">
                             <li><a href="javascript:;">上门养车</a></li>
@@ -231,16 +241,49 @@
     $.ajax({
         type: "get",
         async:false,
-        url: "http://localhost:3000/main",
+        url: "http://localhost:5000/test",
         success: function(msg){
-            data.list=msg;
+            data.list=msg.data;
         }
     });
-    var html = template('test', data);
+    var html = template('test',data);
     $('#content').html(html);
     $('.list .list-body .list-detail ul li a').on('click',function () {
        let $detailId=$(this).children('div').children('em').html();
        localStorage.setItem('detailId',$detailId);
+    });
+    /*分类跳转*/
+    $(function () {
+        $('.menus>ul>li').on('click',function () {
+            let $sortName=$(this).children('a').html();
+            let $sortId=$(this).children('a').next('span').html();
+            let $sortTwoName=[];
+            let $lis=($(this).children('.child-menu').children('li'));
+            for (var i = 0; i < $lis.length; i++) {
+                let $name =$($lis[i]).children('a').html();
+                $sortTwoName.push($name);
+            }
+            localStorage.setItem('sortTwoName',JSON.stringify($sortTwoName));
+            localStorage.setItem('sortId',$sortId);
+            localStorage.setItem('sortName',$sortName);
+        });
+        $('.menus .child-menu>li').on('click',function () {
+            let $sortName=$(this).parent('ul').parent('li').children('a').html();
+            let $sortId=$(this).parent('ul').parent('li').children('a').next('span').html();
+            let $sortTwoName=[];
+            let $sortTwoSingleName=$(this).children('a').html();
+            let $lis=$(this).parent('ul').children('li');
+            for (var i = 0; i < $lis.length; i++){
+                let $name=$($lis[i]).children('a').html();
+                $sortTwoName.push($name);
+            }
+            localStorage.setItem('sortTwoName',JSON.stringify($sortTwoName));
+            localStorage.setItem('sortId',$sortId);
+            localStorage.setItem('sortName',$sortName);
+            localStorage.setItem('sortTwoSingleName',$sortTwoSingleName);
+            localStorage.setItem('sign',1);
+        });
+
     });
 </script>
 </html>
