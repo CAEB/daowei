@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="./css/reset.css">
@@ -138,6 +139,14 @@
                 localStorage.removeItem('sign')
             }
         });
+        $(function () {
+            $('.server-sort-lists').on('click',function () {
+                let id=$(this).children('.server-sort-lists-left').children('i:first').html();
+                localStorage.setItem('detailId',id);
+                window.location.href='./serverDetail.html';
+                console.log(123)
+            })
+        })
     }else {
         $.ajax({
             type: 'get',
@@ -147,6 +156,14 @@
                 data.list = msg.data.serverice;
             }
         });
+        $(function () {
+            $('.server-sort-lists').on('click',function () {
+                let id=$(this).children('.server-sort-lists-left').children('i:first').html();
+                localStorage.setItem('detailId',id);
+                window.location.href='./serverDetail.html';
+                console.log(123)
+            })
+        })
     }
     let html = template('test', data);
     $('#content').html(html);
@@ -177,7 +194,8 @@
             $('.server-sort-lists').on('click',function () {
                 let id=$(this).children('.server-sort-lists-left').children('i:first').html();
                 localStorage.setItem('detailId',id);
-                window.location.href='./serverDetail.html'
+                window.location.href='./serverDetail.html';
+                console.log(123)
             })
         })
     });
